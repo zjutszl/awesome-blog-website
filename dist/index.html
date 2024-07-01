@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>风水灵境首页</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+      <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-4 py-6 flex justify-between items-center">
+            <div class="text-2xl font-bold">风水灵境</div>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#home" class="text-blue-500 hover:text-blue-700">首页</a></li>
+                    <li><a href="#about" class="text-gray-700 hover:text-gray-900">关于我们</a></li>
+                    <li><a href="#services" class="text-gray-700 hover:text-gray-900">服务</a></li>
+                    <li><a href="#contact" class="text-gray-700 hover:text-gray-900">联系我们</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-6 flex-grow">
+        <section id="home" class="mb-8">
+            <h2 class="text-3xl font-bold mb-4">欢迎来到风水灵境</h2>
+            <p class="text-lg">我们利用先进的AI技术，为您提供专业的风水咨询服务。</p>
+        </section>
+        <section id="about" class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">关于我们</h2>
+            <p>风水灵境团队由一群热爱风水和科技的专业人士组成，致力于将传统风水与现代科技相结合。</p>
+        </section>
+        <section id="services" class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">我们的服务</h2>
+            <p>我们提供多种风水服务，包括住宅风水、办公室风水、风水布局等。</p>
+        </section>
+        <section id="contact" class="mb-8">
+            <h2 class="text-2xl font-bold mb-4">联系我们</h2>
+            <p>如有任何疑问或需要咨询，请通过以下方式联系我们：</p>
+            <ul class="list-disc pl-5">
+                <li>电话：123-456-7890</li>
+                <li>邮箱：info@aifengshui.com</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="bg-white shadow py-6 mt-auto">
+        <div class="container mx-auto text-center">
+            <p>© 2023 风水灵境. 版权所有.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
